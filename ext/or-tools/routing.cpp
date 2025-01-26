@@ -173,6 +173,8 @@ void init_routing(Rice::Module& m) {
     .define_method("contains", &operations_research::IntVar::Contains)
     .define_method("old_min", &operations_research::IntVar::OldMin)
     .define_method("old_max", &operations_research::IntVar::OldMax)
+    .define_method("set_min", &operations_research::IntVar::SetMin)
+    .define_method("set_max", &operations_research::IntVar::SetMax)
     .define_method(
       "set_range",
       [](operations_research::IntVar& self, int64_t new_min, int64_t new_max) {
