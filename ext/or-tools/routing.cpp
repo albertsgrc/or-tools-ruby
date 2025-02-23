@@ -205,7 +205,9 @@ void init_routing(Rice::Module& m) {
     .define_method("slack_var", &RoutingDimension::SlackVar)
     .define_method("set_span_upper_bound_for_vehicle", &RoutingDimension::SetSpanUpperBoundForVehicle)
     .define_method("set_span_cost_coefficient_for_vehicle", &RoutingDimension::SetSpanCostCoefficientForVehicle)
+    .define_method("set_slack_cost_coefficient_for_vehicle", &RoutingDimension::SetSlackCostCoefficientForVehicle)
     .define_method("set_span_cost_coefficient_for_all_vehicles", &RoutingDimension::SetSpanCostCoefficientForAllVehicles)
+    .define_method("set_slack_cost_coefficient_for_all_vehicles", &RoutingDimension::SetSlackCostCoefficientForAllVehicles)
     .define_method("set_global_span_cost_coefficient", &RoutingDimension::SetGlobalSpanCostCoefficient)
     // alias
     .define_method("global_span_cost_coefficient=", &RoutingDimension::SetGlobalSpanCostCoefficient)
